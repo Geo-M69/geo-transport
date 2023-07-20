@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Lato:wght@100;300&display=swap');
+
+:root {
+    --blackBackground: #231F20;
+    --redColor: #d62828;
+    --darkRedColor: #A91F1F;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 400vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.taskbar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 80%;
+    height: 17.5%;
+    z-index: 9999;
+    transition: transform 0.4s ease;
+    animation: slide-in-top 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+
+}
+
+.taskbar.scrolled-up {
+  transform: translateY(0);
+  animation: none;
+}
+
+.taskbar.scrolled-down {
+  transform: translateY(-100%);
+  animation: none;
+}
+
+.taskbar.show {
+  visibility: visible;
+}
+
+.taskbar.hide {
+  visibility: hidden;
+}
+
+.first-part-taskbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+    background-color: var(--blackBackground);
+}
+
+.first-part-taskbar h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 40%;
+    height: 100%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-left: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 56%;
+    height: 100%;
+}
+
+.contact-container h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: .9rem;
+    margin-right: 2rem;
+}
+
+.call-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 45%;
+    background-color: var(--redColor);
+    border: none;
+    text-decoration: none;
+}
+
+.call-number::after {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+.second-part-taskbar {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    background-color: #d62828;
+}
+
+.taskbar-buttons {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.taskbar-buttons a {
+    text-decoration: none;
+}
+
+.taskbar-buttons h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1rem;
+}
+
+.background-container {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/chuttersnap-fN603qcEA7g-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateY(-50%); /* Adjust vertical translation */
+    will-change: transform; /* Add for performance optimization */
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .content h1 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    color: white;
+    margin: 0;
+    margin-top: 21%;
+    width: 44%;
+  }
+
+  .content h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: white;
+    width: 44%;
+  }
+
+  .services-card {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 25%;
+    background-color: var(--blackBackground);
+    margin: 0;
+    margin-top: 9%;
+  }
+
+  .services-container {
+    display: flex;
+    background-color: var(--redColor);
+    width: 100%;
+    height: 85%;
+  }
+
+  .services-button-container {
+    display: flex;
+    width: 100%;
+    height: 15%;
+  }
+
+  .services-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    background-color: var(--blackBackground);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  .services-button:hover {
+    background-color: var(--darkRedColor);
+    color: white;
+  }
+
+  .second-background-container {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.second-background-image {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/denys-nevozhai-7nrsVjvALnA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateY(-50%); /* Adjust vertical translation */
+    will-change: transform; /* Add for performance optimization */
+    }
+
+  .second-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 145%;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .second-content h1 {
+    color: white;
+    font-family: "Barlow", sans-serif;
+  }
+
+  .second-content h2 {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    width: 101%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 2;
+    margin-top: 85%;
+  }
+
+  .about-image-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-image: url(./assets/images/juan-pablo-daniel-MvNfMRw3I5k-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .about-text h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+  }
+
+  .about-text h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    width: 60%;
+    line-height: 1.6em;
+    text-align: justify;
+  }
+
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 22%;
+    background-color: var(--redColor);
+    margin-top: 4rem;
+  }
+
+  .form-dimensions {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 80%;
+  }
+
+  .footer-container {
+    display: flex;
+    width: 100%;
+    height: 14%;
+    background-color: var(--blackBackground);
+  }
+
+  .names-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    border: 1px solid var(--blackBackground);
+  }
+
+  .names-first-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid var(--blackBackground);
+  }
+
+  .first-name-container {
+    display: flex;
+    width: 100%;
+    height: 20%;
+  }
+
+  .first-name-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    margin-left: 2.6rem;
+  }
+
+  .first-name-input {
+    display: flex;
+    width: 80%;
+    height: 25%;
+    background-color: transparent;
+    border: 1px solid var(--blackBackground);
+  }
+
+  .names-second-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border: none;
+  }
+
+  .last-name-container {
+    display: flex;
+    width: 100%;
+    height: 20%;
+  }
+
+  .last-name-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    margin-left: 2.6rem;
+  }
+
+  .last-name-input {
+    display: flex;
+    width: 80%;
+    height: 25%;
+    background-color: transparent;
+    border: 1px solid var(--blackBackground);
+  }
+
+  .message-container {
+    display: flex;
+    width: 100%;
+    height: 45%;
+    border: 1px solid var(--blackBackground);
+    border-top: none;
+  }
+
+  .form-button-container {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: var(--blackBackground);
+    border: 1px solid var(--blackBackground);
+    border-top: none;
+  }
+
+  .form-button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackBackground);
+    border: none;
+  }
+
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
