@@ -742,6 +742,46 @@ body {
       margin-top: 102%;
     }
   }
+  @media (max-width: 768px) {
+    .first-part-taskbar h1 {
+      font-size: .9rem;
+    }
+    .call-number {
+      font-size: .65rem;
+      width: 25%;
+    }
+    .taskbar-buttons h2 {
+      font-size: .9rem;
+    }
+    .content h1 {
+      font-size: 45px;
+    }
+    #about-section {
+      margin-top: 108%;
+    }
+    .transport-text-container h1 {
+      font-size: 16px;
+      width: 108%;
+    }
+    .transport-text-container h2 {
+      font-size: 11px;
+      width: 97%;
+      margin-right: 43px;
+    }
+    .export-text-container h1 {
+      font-size: 16px;
+      width: 108%;
+    }
+    .export-text-container h2 {
+      font-size: 11px;
+      width: 97%;
+      margin-right: 43px;
+    }
+    .first-name-text, .email-name-text {
+      margin-left: 1.2rem;
+      font-size: .8rem;
+    }  
+  }
 
 
 @keyframes slide-in-top {
