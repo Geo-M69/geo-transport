@@ -782,6 +782,61 @@ body {
       font-size: .8rem;
     }  
   }
+  @media (max-width: 480px) {
+    .first-part-taskbar h1 {
+      font-size: .7rem;
+      width: 35%;
+    }
+    .call-number {
+      font-size: .6rem;
+      width: 38%;
+    }
+    .call-number {
+      font-size: .6rem;
+      width: 38%;
+    }
+    .content h1 {
+      font-size: 28px;
+      margin-top: 30%;
+    }
+    .content h2 {
+      font-size: 16px;
+    }
+    #about-section {
+      margin-top: 178%;
+    }
+    .transport-text-container h1 {
+      font-size: 13px;
+      width: 130%;
+    }
+    .transport-text-container h2 {
+      font-size: 11px;
+      width: 125%;
+      margin-right: 29px;
+    }
+    .export-text-container h1 {
+      font-size: 13px;
+      width: 130%;
+    }
+    .export-text-container h2 {
+      font-size: 11px;
+      width: 125%;
+      margin-right: 29px;
+    }
+    .services-header-container {
+      font-size: 1.3rem;
+    }
+    .first-name-text, .email-name-text {
+      margin-left: 0.7rem;
+      font-size: 0.7rem;
+    }
+    .leave-message-text {
+      font-size: .7rem;
+    }
+    .form-button {
+      font-size: 1.1rem;
+    }
+  }
 
 
 @keyframes slide-in-top {
