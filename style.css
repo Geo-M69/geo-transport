@@ -738,6 +738,9 @@ body {
     .second-content h1 {
       font-size: 1.6rem;
     }
+    #about-section {
+      margin-top: 102%;
+    }
   }
 
 
