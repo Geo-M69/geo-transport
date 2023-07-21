@@ -687,12 +687,16 @@ body {
     }
     .first-name-text,.email-name-text {
       margin-left: 1.5rem;
+      font-size: .8rem;
     }
     .leave-message-text {
       font-size: .8rem;
     }
     .call-number {
       font-size: .6rem;
+    }
+    .contact-info h2 {
+      font-size: .7rem;
     }
   }
 
