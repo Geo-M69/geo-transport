@@ -626,6 +626,7 @@ body {
     
     .export-text-container h2 {
       font-size: 1.1rem;
+      width: 62%;
     }
   }
 
