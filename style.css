@@ -600,7 +600,7 @@ body {
     background-color: var(--redColor);
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1920px) and (min-height: 1200px) {
     body {
       height: 340vh;
     }
@@ -644,10 +644,6 @@ body {
     .contact-info h2 {
       font-size: 1.1rem;
     }
-  }
-
-  @media (min-width: 1080px) {
-    
   }
 
 
