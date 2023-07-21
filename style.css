@@ -631,9 +631,12 @@ body {
     .about-text h2 {
       font-size: 22px;
     }
-    .first-name-text,.email-name-text, .leave-message-text {
+    .first-name-text,.email-name-text {
       font-size: 1.2rem;
       margin-left: 3.4rem;
+    }
+    .leave-message-text {
+      font-size: 1.2rem;
     }
   }
 
