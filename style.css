@@ -695,8 +695,48 @@ body {
     .call-number {
       font-size: .6rem;
     }
+    .contact-info {
+      height: 75%;
+    }
     .contact-info h2 {
       font-size: .7rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 979px) {
+    .first-part-taskbar h1 {
+      font-size: .9rem;
+    }
+    .taskbar-buttons h2 {
+      font-size: .9rem;
+    }
+    .call-number {
+      font-size: 0.7rem;
+      width: 25%;
+    }
+    .content h1 {
+      font-size: 47px;
+    }
+    .transport-text-container h1 {
+      font-size: 16px;
+      width: 105%;
+  }
+    .transport-text-container h2 {
+      font-size: 11px;
+      width: 93%;
+      margin-right: 43px;
+    }
+    .export-text-container h1 {
+      font-size: 16px;
+      width: 105%;
+  }
+    .export-text-container h2 {
+      font-size: 11px;
+      width: 93%;
+      margin-right: 43px;
+    }
+    .second-content h1 {
+      font-size: 1.6rem;
     }
   }
 
