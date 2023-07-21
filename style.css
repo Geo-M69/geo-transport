@@ -6,6 +6,10 @@
     --darkRedColor: #A91F1F;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -187,11 +191,95 @@ body {
     margin-top: 9%;
   }
 
-  .services-container {
+  #services-container {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--redColor);
     width: 100%;
     height: 85%;
+  }
+
+  .services-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .services-icon-container {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+  }
+
+  .services-icon-container img {
+    max-width: 70%;
+    max-height: 70%;
+    filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(341deg) brightness(126%) contrast(114%);
+  }
+
+  .services-text-container {
+    display: flex;
+    width: 65%;
+    height: 50%;
+    flex-direction: row;
+  }
+
+  .transport-text-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .transport-text-container h1 {
+    color: white;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    width: 48%;
+  }
+
+  .transport-text-container h2 {
+    font-size: 10px;
+    text-align: center;
+    font-size: .85rem;
+    width: 63%;
+  }
+
+  .export-text-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .export-text-container h1 {
+    color: white;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    width: 43%;
+  }
+
+  .export-text-container h2 {
+    font-size: 10px;
+    text-align: center;
+    font-size: .85rem;
+    width: 60%;
   }
 
   .services-button-container {
@@ -267,7 +355,7 @@ body {
     font-weight: 300;
   }
 
-  .about-section {
+  #about-section {
     display: flex;
     flex-direction: row;
     width: 101%;
@@ -331,13 +419,6 @@ body {
     height: 80%;
   }
 
-  .footer-container {
-    display: flex;
-    width: 100%;
-    height: 14%;
-    background-color: var(--blackBackground);
-  }
-
   .names-container {
     display: flex;
     flex-direction: row;
@@ -391,13 +472,13 @@ body {
     border: none;
   }
 
-  .last-name-container {
+  .email-name-container {
     display: flex;
     width: 100%;
     height: 20%;
   }
 
-  .last-name-text {
+  .email-name-text {
     display: flex;
     align-items: center;
     width: 100%;
@@ -408,7 +489,7 @@ body {
     margin-left: 2.6rem;
   }
 
-  .last-name-input {
+  .email-name-input {
     display: flex;
     width: 80%;
     height: 25%;
@@ -418,10 +499,36 @@ body {
 
   .message-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 45%;
     border: 1px solid var(--blackBackground);
     border-top: none;
+  }
+
+  .message-elements-container {
+    display: flex;
+    flex-direction: column;
+    width: 89.5%;
+    height: 80%;
+  }
+
+  .leave-message-container {
+    display: flex;
+    width: 100%;
+    height: 20%;  
+  }
+
+  .leave-message-text {
+    font-family: "Lato", sans-serif;
+  }
+
+  .message-input {
+    height: 70%;
+    background-color: transparent;
+    border: 1px solid var(--blackBackground);
+    outline: none;
   }
 
   .form-button-container {
@@ -435,10 +542,61 @@ body {
 
   .form-button {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: var(--blackBackground);
     border: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    transition: color 0.4s ease;
+  }
+
+  .form-button:hover {
+    color: var(--redColor);
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 14%;
+    background-color: var(--blackBackground);
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+  }
+
+  .logo-container img {
+    max-width: 100%;
+    max-height: 300%;
+  }
+
+  .contact-info {
+    display: flex;
+    width: 100%;
+    height: 35%;
+    flex-direction: column;
+  }
+
+  .contact-info h2 {
+    font-size: 1rem;
+  }
+
+  .call-us {
+    display: flex;
+    width: 40%;
+    height: 20%;
+    background-color: var(--redColor);
   }
 
 

@@ -20,10 +20,10 @@
                 <a href="">
                     <h2>Home</h2>
                 </a>
-                <a href="">
+                <a href="#about-section">
                     <h2>About</h2>
                 </a>
-                <a href="">
+                <a href="#services-container">
                     <h2>Services</h2>
                 </a>
                 <a href="">
@@ -38,14 +38,31 @@
             <h1>We Go the <br>Extra Mile for You</h1>
             <h2>Need a lift? We can help.</h2>
             <div class="services-card">
-                <div class="services-container"></div>
+                <div id="services-container">
+                    <div class="services-header-container">Services</div>
+                    <div class="services-icon-container">
+                        <img src="./assets/images/ground transfer.svg" alt="" srcset="" >
+                        <img src="./assets/images/sea transfer.svg" alt="" srcset="">
+                    </div>
+                    <div class="services-text-container">
+                        <div class="transport-text-container">
+                            <h1>Transport Service</h1>
+                            <h2>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</h2>
+                        </div>
+                        <div class="export-text-container">
+                            <h1>Export Services</h1>
+                            <h2>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</h2>
+
+                        </div>
+                    </div>
+                </div>
                 <div class="services-button-container">
                     <button class="services-button">See All</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="about-section">
+    <div id="about-section">
         <div class="about-image-container"></div>
         <div class="about-text tracking-in">
             <h1>About Us</h1>
@@ -57,32 +74,48 @@
         <div class="second-content">
             <h1>Contact Us Now!</h1>
             <h2>Give us a call at 302-322-9001<br>Or, leave a message if you have a question:</h2>
-            <div class="form-container">
+            <form class="form-container" action="https://formsubmit.co/vvxcved@exelica.com" method="POST">
                 <div class="form-dimensions">
                     <div class="names-container">
                         <div class="names-first-half">
                             <div class="first-name-container">
                                 <div class="first-name-text">First Name</div>
                             </div>
-                            <input type="text" class="first-name-input">
+                            <input type="text" class="first-name-input" name="name">
                         </div>
                         <div class="names-second-half">
-                            <div class="last-name-container">
-                                <div class="last-name-text">Last Name</div>
+                            <div class="email-name-container">
+                                <div class="email-name-text">Email</div>
                             </div>
-                            <input type="text" class="last-name-input">
+                            <input type="email" class="email-name-input" name="email">
                         </div>
                     </div>
-                    <div class="message-container"></div>
+                    <div class="message-container">
+                        <div class="message-elements-container">
+                            <div class="leave-message-container">
+                                <div class="leave-message-text">Leave us a message..</div>
+                            </div>
+                            <input type="text" class="message-input" name="message">
+                        </div>
+                    </div>
                     <div class="form-button-container">
-                        <button class="form-button"></button>
+                        <button class="form-button" type="submit">Send</button>
                     </div>
                 </div>
-            </div>
-            <footer class="footer-container"></footer>
+            </form>
+            <footer class="footer-container">
+                <div class="logo-container">
+                    <img src="./assets/images/Screenshot 2023-07-18 155540.png" alt="">
+                </div>
+                <div class="contact-info">
+                    <h2>235 S. Dupont Hwy <br>New Castle, DE 19720 <br>geoautoexport@yahoo.com</h2>
+                </div>
+                <button class="call-us">302-322-9001</button>
+            </footer>
         </div>
     </div>
 <script src="./imageParallax.js"></script>
 <script src="./secondParallax.js"></script>
+<script src="./smoothScroll.js"></script>
 </body>
 </html>
