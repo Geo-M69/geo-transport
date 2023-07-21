@@ -677,11 +677,19 @@ body {
     .export-text-container h1 {
       font-size: 15px;
       width: 81%;
+      margin-left: 5rem;
     }
     .export-text-container h2 {
       font-size: 11px;
       width: 80%;
       margin-right: 43px;
+      padding-left: 73px;
+    }
+    .first-name-text,.email-name-text {
+      margin-left: 1.5rem;
+    }
+    .leave-message-text {
+      font-size: .8rem;
     }
   }
 
