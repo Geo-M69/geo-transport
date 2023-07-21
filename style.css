@@ -600,7 +600,7 @@ body {
     background-color: var(--redColor);
   }
 
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) {
     body {
       height: 340vh;
     }
