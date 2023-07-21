@@ -600,6 +600,35 @@ body {
     background-color: var(--redColor);
   }
 
+  @media (min-width: 1200px) {
+    body {
+      height: 340vh;
+    }
+    .call-number {
+      font-size: 1rem;
+    }
+    .contact-container h2 {
+      font-size: 1.2rem;
+    }
+    .taskbar-buttons h2 {
+      font-size: 1.3rem;
+    }
+    .transport-text-container h1 {
+      font-size: 1.5rem;
+    }
+    
+    .transport-text-container h2 {
+      font-size: 1.1rem;
+    }
+    .transport-text-container h1 {
+      font-size: 1.5rem;
+    }
+    
+    .transport-text-container h2 {
+      font-size: 1.1rem;
+    }
+  }
+
 
 @keyframes slide-in-top {
   0% {
