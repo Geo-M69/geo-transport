@@ -646,6 +646,45 @@ body {
     }
   }
 
+  @media (max-width: 980px) {
+    body {
+      height: 355vh;
+    }
+    .first-part-taskbar h1 {
+      font-size: 1.1rem;
+    }
+    .content h1 {
+      font-size: 56px;
+    }
+    .taskbar-buttons {
+      width: 42%;
+    }
+    .contact-container h2 {
+      font-size: .8rem;
+    }
+    .content h2 {
+      font-size: 25px;
+    }
+    .transport-text-container h1 {
+      font-size: 15px;
+      width: 81%;
+    }
+    .transport-text-container h2 {
+      font-size: 11px;
+      width: 80%;
+      margin-right: 43px;
+    }
+    .export-text-container h1 {
+      font-size: 15px;
+      width: 81%;
+    }
+    .export-text-container h2 {
+      font-size: 11px;
+      width: 80%;
+      margin-right: 43px;
+    }
+  }
+
 
 @keyframes slide-in-top {
   0% {
