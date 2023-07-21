@@ -97,6 +97,7 @@ body {
     background-color: var(--redColor);
     border: none;
     text-decoration: none;
+    color: white;
 }
 
 .call-number::after {
