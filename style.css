@@ -189,11 +189,11 @@ body {
   }
 
   .services-card {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 60%;
     height: 25%;
-    background-color: var(--blackBackground);
+    background-color: transparent;
     margin: 0;
     margin-top: 9%;
   }
