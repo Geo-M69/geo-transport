@@ -68,7 +68,5 @@ document.getElementById('call-number').addEventListener('click', function() {
   window.open(telURI, '_blank');
 });
 
-SilkScroll.active();
-
 
 
