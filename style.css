@@ -962,23 +962,23 @@ body {
       text-align: justify;
     }
     .transport-text-container h1 {
-      font-size: 14px;
-      width: 157%;
+      font-size: 13px;
+      width: 184%;
       margin-top: 1.5rem;
     }
     .transport-text-container h2 {
-      font-size: 11px;
+      font-size: 10px;
       width: 125%;
       margin-right: 0px;
     }
     .export-text-container h1 {
-      font-size: 14px;
-      width: 168%;
+      font-size: 13px;
+      width: 197%;
       margin-top: 1.5rem;
       margin-left: 6rem;
     }
     .export-text-container h2 {
-      font-size: 11px;
+      font-size: 10px;
       width: 125%;
     }
     .transport-text-container {
