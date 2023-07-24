@@ -972,11 +972,11 @@ body {
     }
     .about-text h2 {
       font-family: "Lato", sans-serif;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       width: 60%;
       line-height: 1.6em;
-      text-align: justify;
+      text-align: center;
     }
     .services-card {
       height: 35%;
