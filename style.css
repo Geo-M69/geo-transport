@@ -661,15 +661,15 @@ body {
       font-size: 1.2rem;
       width: 53%;
     }
-    .transport-text-container h1 {
+    .transport-text-container h2 {
       font-size: 1.2rem;
-      width: 52%;
+      width: 67%;
     }
     .export-text-container h1 {
       width: 35%;
     }
     .export-text-container h2 {
-      width: 52%;
+      width: 70%;
     }
   }
 
