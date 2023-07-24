@@ -657,12 +657,12 @@ body {
   }
 
   @media (max-width: 1920px) and (max-height: 1080px) {
-    .transport-text-container {
+    .transport-text-container h1 {
       font-size: 1.2rem;
-      width: 52%;
+      width: 53%;
     }
     .export-text-container h1 {
-      width: 34%;
+      width: 35%;
     }
     .export-text-container h2 {
       width: 52%;
