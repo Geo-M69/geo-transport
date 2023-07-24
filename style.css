@@ -298,7 +298,7 @@ body {
   }
 
   .services-button {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -900,7 +900,7 @@ body {
       width: 178%;
     }
     .transport-text-container h2 {
-      font-size: 8.1px;
+      font-size: 9.1px;
       width: 125%;
       margin-right: 0px;
     }
@@ -909,7 +909,7 @@ body {
       width: 168%;
     }
     .export-text-container h2 {
-      font-size: 8.1px;
+      font-size: 9.1px;
       width: 125%;
       margin-left: -6px;
     }
