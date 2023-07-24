@@ -357,6 +357,7 @@ body {
   .second-content h1 {
     color: white;
     font-family: "Barlow", sans-serif;
+    font-weight: 500;
   }
 
   .second-content h2 {
