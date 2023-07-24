@@ -94,7 +94,7 @@ body {
     margin-right: 2rem;
 }
 
-.call-number {
+#call-number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +106,7 @@ body {
     color: white;
 }
 
-.call-number::after {
+#call-number::after {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     color: white;
@@ -614,7 +614,7 @@ body {
     body {
       height: 340vh;
     }
-    .call-number {
+    #call-number {
       font-size: 1rem;
     }
     .contact-container h2 {
@@ -702,7 +702,7 @@ body {
     .leave-message-text {
       font-size: .8rem;
     }
-    .call-number {
+    #call-number {
       font-size: .6rem;
     }
     .contact-info {
@@ -720,7 +720,7 @@ body {
     .taskbar-buttons h2 {
       font-size: .9rem;
     }
-    .call-number {
+    #call-number {
       font-size: 0.7rem;
       width: 25%;
     }
@@ -756,7 +756,7 @@ body {
     .first-part-taskbar h1 {
       font-size: .9rem;
     }
-    .call-number {
+    #call-number {
       font-size: .65rem;
       width: 25%;
     }
@@ -797,11 +797,11 @@ body {
       font-size: .7rem;
       width: 35%;
     }
-    .call-number {
+    #call-number {
       font-size: .6rem;
       width: 38%;
     }
-    .call-number {
+    #call-number {
       font-size: .6rem;
       width: 38%;
     }
@@ -858,7 +858,7 @@ body {
     .header-image {
       display: block;
     }
-    .call-number {
+    #call-number {
       font-size: .73rem;
       width: 51%;
     }
