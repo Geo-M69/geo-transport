@@ -896,6 +896,12 @@ body {
       width: 125%;
       margin-left: -6px;
     }
+    .transport-text-container {
+      margin-top: -.5rem;
+    }
+    .export-text-container {
+      margin-top: -.5rem;
+    }
 
   }
 
