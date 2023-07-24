@@ -72,6 +72,12 @@ body {
     margin-left: 1rem;
 }
 
+.header-image {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
 .contact-container {
     display: flex;
     align-items: center;
@@ -838,6 +844,15 @@ body {
     }
     .form-button {
       font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 450px) and (max-height: 900px) {
+    .first-part-taskbar h1 {
+      display: none;
+    }
+    .header-image {
+      display: block;
     }
   }
 
