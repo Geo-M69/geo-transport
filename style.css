@@ -292,7 +292,7 @@ body {
   }
 
   .services-button-container {
-    display: flex;
+    display: none;
     width: 100%;
     height: 15%;
   }
@@ -310,7 +310,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 0rem;
+    font-size: 1.2rem;
   }
 
   .services-button:hover {
