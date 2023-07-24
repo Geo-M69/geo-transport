@@ -58,4 +58,15 @@ window.addEventListener('load', function() {
   }
 });
 
+// Add event listener to the call button
+document.getElementById('call-number').addEventListener('click', function() {
+  // Replace the phone number with the desired number you want to call
+  var phoneNumber = '+13023229001';
+
+  // Construct the tel: URI and open it in a new tab/window
+  var telURI = 'tel:' + phoneNumber;
+  window.open(telURI, '_blank');
+});
+
+
 
