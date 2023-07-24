@@ -978,6 +978,9 @@ body {
       line-height: 1.6em;
       text-align: justify;
     }
+    .services-card {
+      height: 35%;
+    }
     .transport-text-container h1 {
       font-size: 13px;
       width: 184%;
@@ -995,7 +998,7 @@ body {
       margin-left: 6rem;
     }
     .export-text-container h2 {
-      font-size: 10px;
+      font-size: 8PX;
       width: 125%;
     }
     .transport-text-container {
