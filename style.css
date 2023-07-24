@@ -848,7 +848,7 @@ body {
     }
   }
 
-  @media (max-width: 450px) and (max-height: 900px) {
+  @media (max-width: 450px) and (max-height: 950px) {
     body {
       height: 302vh;
     }
