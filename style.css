@@ -904,7 +904,7 @@ body {
     }
     .logo-container {
       width: 36%;
-      height: 40%;
+      height: 20%;
     }
     .logo-container img {
       max-width: 100%;
@@ -912,6 +912,10 @@ body {
     }
     .second-content h2 {
       width: 90%;
+    }
+    .contact-info {
+      height: 75%;
+      align-items: center;
     }
 
   }
