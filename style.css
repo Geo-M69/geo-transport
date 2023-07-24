@@ -115,7 +115,7 @@ body {
 
 .taskbar-buttons {
     display: flex;
-    width: 30%;
+    width: 29%;
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
@@ -129,7 +129,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .background-container {
@@ -256,7 +256,8 @@ body {
     font-size: 10px;
     text-align: center;
     font-size: .85rem;
-    width: 63%;
+    width: 50%;
+    margin-left: -2.5rem;
   }
 
   .export-text-container {
@@ -281,7 +282,8 @@ body {
     font-size: 10px;
     text-align: center;
     font-size: .85rem;
-    width: 60%;
+    width: 50%;
+    margin-left: 2.5rem;
   }
 
   .services-button-container {
