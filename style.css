@@ -904,6 +904,7 @@ body {
     }
     .logo-container img {
       max-height: 300%;
+      object-fit: cover;
     }
 
   }
