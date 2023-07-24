@@ -189,7 +189,7 @@ body {
   }
 
   .services-card {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 60%;
     height: 25%;
