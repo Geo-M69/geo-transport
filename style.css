@@ -903,8 +903,7 @@ body {
       margin-top: -.5rem;
     }
     .logo-container img {
-      max-width: 200%;
-      max-height: 200%;
+      max-height: 300%;
     }
 
   }
