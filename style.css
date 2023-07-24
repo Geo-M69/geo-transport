@@ -661,6 +661,10 @@ body {
       font-size: 1.2rem;
       width: 53%;
     }
+    .transport-text-container h1 {
+      font-size: 1.2rem;
+      width: 52%;
+    }
     .export-text-container h1 {
       width: 35%;
     }
