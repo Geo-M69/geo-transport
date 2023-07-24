@@ -854,6 +854,45 @@ body {
     .header-image {
       display: block;
     }
+    .call-number {
+      font-size: .73rem;
+      width: 50%;
+    }
+    .taskbar-buttons {
+      width: 98%;
+    }
+    .taskbar-buttons h2 {
+      font-size: 1rem;
+    }
+    .content h1 {
+      font-size: 41%;
+      margin-top: 50%;
+    }
+    .content h2 {
+      font-size: 17px;
+    }
+    #about-section {
+      margin-top: 218%;
+    }
+    .transport-text-container h1 {
+      font-size: 14px;
+      width: 178%;
+    }
+    .transport-text-container h2 {
+      font-size: 11.1px;
+      width: 125%;
+      margin-right: 0px;
+    }
+    .export-text-container h1 {
+      font-size: 14px;
+      width: 178%;
+    }
+    .export-text-container h2 {
+      font-size: 11.1px;
+      width: 125%;
+      margin-right: 0px;
+    }
+
   }
 
 
