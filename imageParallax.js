@@ -1,30 +1,13 @@
-function parallaxScroll() {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var parallaxImage = document.querySelector('.background-image');
-  parallaxImage.style.transform = 'translate3d(0, ' + scrollTop * 0.4 + 'px, 0)';
+var isPC = window.matchMedia("(min-width: 768px)").matches;
+
+if (isPC) { // Only enable the parallax effect on PCs with a viewport width of 768 pixels or greater
+  // Parallax animation for background image //
+  document.addEventListener('scroll', function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var parallaxImage = document.querySelector('.background-image');
+    parallaxImage.style.transform = 'translate3d(0, ' + scrollTop * 0.4 + 'px, 0)';
+  });
 }
-
-function isPCDevice() {
-  return window.matchMedia("(min-width: 768px)").matches;
-}
-
-function handleScroll() {
-  if (isPCDevice()) {
-      var debouncedParallaxScroll = _.debounce(parallaxScroll, 10);
-      window.addEventListener('scroll', debouncedParallaxScroll);
-  } else {
-      var parallaxImage = document.querySelector('.background-image');
-      parallaxImage.style.transform = 'none';
-      window.removeEventListener('scroll', debouncedParallaxScroll);
-  }
-}
-
-// Call handleScroll initially to handle the initial state on page load
-handleScroll();
-
-// Call handleScroll whenever the window is resized to handle the change in device type
-window.addEventListener('resize', handleScroll);
-
 
 
 // Services button fade-out animation //
