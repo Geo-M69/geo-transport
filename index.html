@@ -114,26 +114,7 @@
             </footer>
         </div>
     </div>
-<!-- Add this script tag before your other JavaScript code -->
-<script>
-    // Function to check if the device is a mobile device
-    function isMobileDevice() {
-      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
-  
-    // Function to disable the parallax effect
-    function disableParallax() {
-      var parallaxElements = document.querySelectorAll('.background-image');
-      for (var i = 0; i < parallaxElements.length; i++) {
-        parallaxElements[i].style.backgroundAttachment = 'scroll';
-      }
-    }
-  
-    // Check if the device is a mobile device and disable the parallax effect if true
-    if (isMobileDevice()) {
-      disableParallax();
-    }
-</script>  
+
 <script src="./imageParallax.js"></script>
 <script src="./secondParallax.js"></script>
 <script src="./smoothScroll.js"></script>
