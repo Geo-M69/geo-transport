@@ -1,6 +1,6 @@
 function parallaxScroll() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var parallaxImage = document.querySelector('.background-container');
+  var parallaxImage = document.querySelector('.background-image');
   parallaxImage.style.transform = 'translate3d(0, ' + scrollTop * 0.4 + 'px, 0)';
 }
 
@@ -8,13 +8,19 @@ function isPCDevice() {
   return window.matchMedia("(min-width: 768px)").matches;
 }
 
-if (isPCDevice()) {
-  var debouncedParallaxScroll = _.debounce(parallaxScroll, 10);
-  window.addEventListener('scroll', debouncedParallaxScroll);
-} else {
-  var parallaxImage = document.querySelector('.background-container');
-  parallaxImage.style.transform = 'none';
+function handleScroll() {
+  if (isPCDevice()) {
+      var debouncedParallaxScroll = _.debounce(parallaxScroll, 10);
+      window.addEventListener('scroll', debouncedParallaxScroll);
+  } else {
+      var parallaxImage = document.querySelector('.background-image');
+      parallaxImage.style.transform = 'none';
+  }
 }
+
+// Call handleScroll initially to handle the initial state on page load
+handleScroll();
+
 
 // Services button fade-out animation //
 
