@@ -569,7 +569,7 @@ body {
     color: var(--redColor);
   }
 
-  #footer-container {
+  .footer-container {
     display: flex;
     align-items: center;
     justify-content: center;
