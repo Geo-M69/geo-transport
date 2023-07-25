@@ -770,9 +770,6 @@ body {
     }
   }
   @media (max-width: 768px) {
-    body {
-      background-attachment: scroll;
-    }
     .first-part-taskbar h1 {
       font-size: .9rem;
     }
@@ -813,9 +810,6 @@ body {
     }  
   }
   @media (max-width: 480px) {
-    body {
-      background-attachment: scroll;
-    }
     .first-part-taskbar h1 {
       font-size: .7rem;
       width: 35%;
@@ -874,7 +868,6 @@ body {
   @media (max-width: 450px) and (max-height: 950px) {
     body {
       height: 302vh;
-      background-attachment: scroll;
     }
     .first-part-taskbar h1 {
       display: none;
@@ -948,7 +941,6 @@ body {
     body {
       height: 335vh;
       text-decoration: none;
-      background-attachment: scroll;
     }
     .first-part-taskbar h1 {
       display: none;
