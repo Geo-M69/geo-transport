@@ -1,6 +1,6 @@
 function parallaxScroll() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var parallaxImage = document.querySelector('.background-image');
+  var parallaxImage = document.querySelector('.background-container');
   parallaxImage.style.transform = 'translate3d(0, ' + scrollTop * 0.4 + 'px, 0)';
 }
 
@@ -12,7 +12,7 @@ if (isPCDevice()) {
   var debouncedParallaxScroll = _.debounce(parallaxScroll, 10);
   window.addEventListener('scroll', debouncedParallaxScroll);
 } else {
-  var parallaxImage = document.querySelector('.background-image');
+  var parallaxImage = document.querySelector('.background-container');
   parallaxImage.style.transform = 'none';
 }
 
