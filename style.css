@@ -158,7 +158,7 @@ body {
     opacity: 0.5;
     z-index: 0;
     transform: translateY(-50%); /* Adjust vertical translation */
-    will-change: transform; /* Add for performance optimization */
+    will-change: none; /* Add for performance optimization */
   }
 
   .content {
@@ -338,7 +338,7 @@ body {
     opacity: 0.5;
     z-index: 0;
     transform: translateY(-50%); /* Adjust vertical translation */
-    will-change: transform; /* Add for performance optimization */
+    will-change: none; /* Add for performance optimization */
     }
 
   .second-content {
