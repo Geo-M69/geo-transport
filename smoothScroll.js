@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Contact Smooth Scroll //
 document.addEventListener('DOMContentLoaded', function () {
   // Get reference to the target div
-  const contactDiv = document.getElementById('last-image');
+  const contactDiv = document.getElementById('');
 
   // Add a click event listener to the anchor link
   document.querySelector('a[href="#contactDiv"]').addEventListener('click', function (e) {
