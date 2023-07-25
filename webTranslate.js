@@ -12,7 +12,7 @@ function translateWebpage() {
     // Perform the translation using DeepL API
     deepl.translate({
         text: textToTranslate,
-        target_lang: 'ES', // Replace with your target language code, e.g., 'en', 'fr', 'de', etc.
+        target_lang: 'es', // Replace with your target language code, e.g., 'en', 'fr', 'de', etc.
         auth_key: apiKey,
         split_sentences: 'nonewlines',
         preserve_formatting: 1,
@@ -25,7 +25,7 @@ function translateWebpage() {
 
 // Add an event listener to trigger the translation when desired
 // For example, you can trigger the translation when a button is clicked:
-document.getElementById('translateButton').addEventListener('click', function() {
+document.getElementById('translatePage').addEventListener('click', function() {
     translateWebpage();
 });
 
