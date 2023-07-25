@@ -16,7 +16,6 @@ if (isPCDevice()) {
   parallaxImage.style.transform = 'none';
 }
 
-
 // Services button fade-out animation //
 
 var colorButton = document.querySelector('.services-button');
