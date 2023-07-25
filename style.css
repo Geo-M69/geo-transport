@@ -422,7 +422,7 @@ body {
     margin-top: 4rem;
   }
 
-  #form-dimensions {
+  .form-dimensions {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -569,7 +569,7 @@ body {
     color: var(--redColor);
   }
 
-  .footer-container {
+  #footer-container {
     display: flex;
     align-items: center;
     justify-content: center;
