@@ -422,7 +422,7 @@ body {
     margin-top: 4rem;
   }
 
-  .form-dimensions {
+  #form-dimensions {
     display: flex;
     flex-direction: column;
     width: 60%;
