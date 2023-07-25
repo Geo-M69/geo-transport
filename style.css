@@ -773,6 +773,11 @@ body {
     .first-part-taskbar h1 {
       font-size: .9rem;
     }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      background-position: unset;
+    }
     .second-background-image {
       background-position: inherit;
       height: 110%;
@@ -818,6 +823,11 @@ body {
     .first-part-taskbar h1 {
       font-size: .7rem;
       width: 35%;
+    }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      background-position: unset;
     }
     .second-background-image {
       background-position: inherit;
@@ -878,6 +888,11 @@ body {
   @media (max-width: 450px) and (max-height: 950px) {
     body {
       height: 302vh;
+    }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      background-position: unset;
     }
     .second-background-image {
       background-position: inherit;
@@ -956,6 +971,11 @@ body {
     body {
       height: 335vh;
       text-decoration: none;
+    }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      background-position: unset;
     }
     .second-background-image {
       background-position: inherit;
