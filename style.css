@@ -425,6 +425,7 @@ body {
 
   .form-dimensions {
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 80%;
     height: 80%;
@@ -541,7 +542,7 @@ body {
 
   .form-button-container {
     display: flex;
-    width: 100%;
+    width: 89%;
     height: 15%;
     background-color: var(--blackBackground);
     border: 1px solid var(--blackBackground);
