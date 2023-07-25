@@ -15,11 +15,16 @@ function handleScroll() {
   } else {
       var parallaxImage = document.querySelector('.background-image');
       parallaxImage.style.transform = 'none';
+      window.removeEventListener('scroll', debouncedParallaxScroll);
   }
 }
 
 // Call handleScroll initially to handle the initial state on page load
 handleScroll();
+
+// Call handleScroll whenever the window is resized to handle the change in device type
+window.addEventListener('resize', handleScroll);
+
 
 
 // Services button fade-out animation //
