@@ -778,11 +778,13 @@ body {
       background-size: cover;
       background-position: unset;
       transform: translate3d(0, 0, 0);
+      will-change: auto;
     }
     .second-background-image {
       background-position: inherit;
       height: 110%;
       transform: translate3d(0, 0, 0);
+      will-change: auto;
     }
     #call-number {
       font-size: .65rem;
@@ -830,11 +832,13 @@ body {
       background-size: cover;
       background-position: unset;
       transform: translate3d(0, 0, 0);
+      will-change: auto;
     }
     .second-background-image {
       background-position: inherit;
       height: 110%;
       transform: translate3d(0, 0, 0);
+      will-change: auto;
     }
     #call-number {
       font-size: .6rem;
@@ -896,11 +900,13 @@ body {
       background-size: cover;
       background-position: unset;
       transform: translate3d(0, 0, 0);
+      will-change: auto;
     }
     .second-background-image {
       background-position: inherit;
       height: 110%;
       transform: translate3d(0, 0, 0);
+      will-change: auto;
     }
     .first-part-taskbar h1 {
       display: none;
@@ -980,11 +986,13 @@ body {
       background-size: cover;
       background-position: unset;
       transform: translate3d(0, 0, 0);
+      will-change: auto;
     }
     .second-background-image {
       background-position: inherit;
       height: 110%;
       transform: translate3d(0, 0, 0);
+      will-change: auto;
     }
     .first-part-taskbar h1 {
       display: none;
