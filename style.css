@@ -777,12 +777,12 @@ body {
       height: 134%;
       background-size: cover;
       background-position: unset;
-      transform: translateY(0%);
+      transform: translate3d(0, 0, 0);
     }
     .second-background-image {
       background-position: inherit;
       height: 110%;
-      transform: translateY(0%);
+      transform: translate3d(0, 0, 0);
     }
     #call-number {
       font-size: .65rem;
@@ -829,12 +829,12 @@ body {
       height: 134%;
       background-size: cover;
       background-position: unset;
-      transform: translateY(0%);
+      transform: translate3d(0, 0, 0);
     }
     .second-background-image {
       background-position: inherit;
       height: 110%;
-      transform: translateY(0%);
+      transform: translate3d(0, 0, 0);
     }
     #call-number {
       font-size: .6rem;
@@ -895,12 +895,12 @@ body {
       height: 134%;
       background-size: cover;
       background-position: unset;
-      transform: translateY(0%);
+      transform: translate3d(0, 0, 0);
     }
     .second-background-image {
       background-position: inherit;
       height: 110%;
-      transform: translateY(0%);
+      transform: translate3d(0, 0, 0);
     }
     .first-part-taskbar h1 {
       display: none;
@@ -979,12 +979,12 @@ body {
       height: 134%;
       background-size: cover;
       background-position: unset;
-      transform: translateY(0%);
+      transform: translate3d(0, 0, 0);
     }
     .second-background-image {
       background-position: inherit;
       height: 110%;
-      transform: translateY(0%);
+      transform: translate3d(0, 0, 0);
     }
     .first-part-taskbar h1 {
       display: none;
