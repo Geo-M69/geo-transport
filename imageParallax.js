@@ -1,10 +1,12 @@
-// Parallax animation for background image //
-
-document.addEventListener('scroll', function() {
+var isPC = window.matchMedia("(min-width: 768px)").matches;
+if (isPC) {
+  // Parallax animation for background image //
+  document.addEventListener('scroll', function() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     var parallaxImage = document.querySelector('.background-image');
     parallaxImage.style.transform = 'translate3d(0, ' + scrollTop * 0.4 + 'px, 0)';
   });
+}
 
 // Services button fade-out animation //
 
