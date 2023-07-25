@@ -777,6 +777,7 @@ body {
       height: 134%;
       background-size: cover;
       background-position: unset;
+      transform: translateY(0%);
     }
     .second-background-image {
       background-position: inherit;
@@ -828,6 +829,7 @@ body {
       height: 134%;
       background-size: cover;
       background-position: unset;
+      transform: translateY(0%);
     }
     .second-background-image {
       background-position: inherit;
@@ -893,6 +895,7 @@ body {
       height: 134%;
       background-size: cover;
       background-position: unset;
+      transform: translateY(0%);
     }
     .second-background-image {
       background-position: inherit;
@@ -976,6 +979,7 @@ body {
       height: 134%;
       background-size: cover;
       background-position: unset;
+      transform: translateY(0%);
     }
     .second-background-image {
       background-position: inherit;
