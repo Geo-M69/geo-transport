@@ -72,5 +72,13 @@ document.getElementById('call-number').addEventListener('click', function() {
   window.open(telURI, '_blank');
 });
 
-
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+  
+function resize() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+  
+window.addEventListener('resize', resize);
 
