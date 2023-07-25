@@ -4,8 +4,8 @@ if (isPC) { // Only enable the parallax effect on PCs with a viewport width of 7
   // Parallax animation for background image //
   document.addEventListener('scroll', function() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    var parallaxImage = document.querySelector('.background-image');
-    parallaxImage.style.transform = 'translate3d(0, ' + scrollTop * 0.4 + 'px, 0)';
+    var parallaxContainer = document.querySelector('.background-image');
+    parallaxContainer.style.transform = 'translate3d(0, ' + scrollTop * 0.4 + 'px, 0)';
   });
 }
 
