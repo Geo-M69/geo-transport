@@ -1,7 +1,4 @@
-var isPC = window.matchMedia("(min-width: 768px)").matches;
-
-if (isPC) {
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     var parallaxContainer = document.querySelector('.second-background-container');
     var parallaxContent = document.querySelector('.second-background-image');
   
@@ -12,4 +9,4 @@ if (isPC) {
   
     window.addEventListener('scroll', scrollParallax);
   });
-}
+  
