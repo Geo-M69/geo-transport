@@ -406,7 +406,7 @@ body {
 
   .about-text h2 {
     font-family: "Lato", sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     width: 60%;
     line-height: 1.6em;
@@ -512,7 +512,6 @@ body {
     justify-content: center;
     width: 100%;
     height: 45%;
-    border: 1px solid var(--blackBackground);
     border-top: none;
   }
 
