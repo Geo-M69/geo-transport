@@ -1035,9 +1035,9 @@ body {
       height: 35%;
     }
     .transport-text-container h1 {
-      font-size: 14px;
-      width: 130%;
-      margin-top: 1rem;
+      font-size: 13px;
+      width: 141%;
+      margin-top: 1.5rem;
     }
     .transport-text-container h2 {
       text-align: center;
@@ -1046,9 +1046,10 @@ body {
       margin-right: 0px;
     }
     .export-text-container h1 {
-      font-size: 14px;
-      width: 125%;
-      margin-top: 1rem;
+      font-size: 13px;
+      width: 140%;
+      margin-top: 1.5rem;
+      margin-left: 6rem;
     }
     .export-text-container h2 {
       font-size: 9.7px;
