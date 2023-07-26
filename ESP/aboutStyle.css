@@ -1007,7 +1007,7 @@ body {
 
   @media (max-width: 450px) and (max-height: 950px) {
     body {
-      height: 331vh;
+      height: 300vh;
     }
     .background-image {
       height: 134%;
@@ -1034,7 +1034,7 @@ body {
       width: 98%;
     }
     .taskbar-buttons h2 {
-      font-size: 1rem;
+      font-size: .9rem;
     }
     .content h1 {
       font-size: 29px;
@@ -1047,6 +1047,11 @@ body {
     }
     #about-section {
       margin-top: 218%;
+    }
+    .about-text h1 {
+      font-family: "Barlow", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
     }
     .transport-text-container h1 {
       font-size: 14px;
@@ -1064,34 +1069,14 @@ body {
     }
     .export-text-container h2 {
       font-size: 10.5px;
-      width: 109%;
+      width: 116%;
       margin-left: -6px;
     }
     .transport-text-container {
       margin-top: -.5rem;
     }
-    .transport-text-container h1 {
-      font-size: 14px;
-      width: 125%;
-      margin-top: 1rem;
-    }
-    .transport-text-container h2 {
-      font-size: 10.5px;
-      width: 124%;
-      margin-right: 0px;
-    }
     .export-text-container {
       margin-top: -.5rem;
-    }
-    .export-text-container h1 {
-      font-size: 14px;
-      width: 123%;
-      margin-top: 1rem;
-    }
-    .export-text-container h2 {
-      font-size: 10.5px;
-      width: 144%;
-      margin-left: -6px;
     }
     .logo-container {
       width: 36%;
@@ -1165,7 +1150,7 @@ body {
       font-size: .65rem;
     }
     .content h1 {
-      font-size: 27px;
+      font-size: 26px;
       margin-top: 50%;
       width: 77%;
     }
@@ -1199,7 +1184,7 @@ body {
       text-align: center;
     }
     .services-card {
-      height: 35%;
+      height: 30%;
     }
     .transport-text-container h1 {
       font-size: 13px;
@@ -1209,7 +1194,7 @@ body {
     .transport-text-container h2 {
       text-align: center;
       font-size: 8.7px;
-      width: 98%;
+      width: 106%;
       margin-right: 0px;
     }
     .export-text-container h1 {
@@ -1219,7 +1204,7 @@ body {
     }
     .export-text-container h2 {
       font-size: 9px;
-      width: 133%;
+      width: 145%;
       text-align: center;
       margin-left: -6px;
     }
