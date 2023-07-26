@@ -1,0 +1,1249 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Lato:wght@100;300&display=swap');
+
+:root {
+    --blackBackground: #231F20;
+    --redColor: #d62828;
+    --darkRedColor: #A91F1F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 400vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.taskbar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 80%;
+    height: 17.5%;
+    z-index: 9999;
+    transition: transform 0.4s ease;
+    animation: slide-in-top 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+
+}
+
+.taskbar.scrolled-up {
+  transform: translateY(0);
+  animation: none;
+}
+
+.taskbar.scrolled-down {
+  transform: translateY(-100%);
+  animation: none;
+}
+
+.taskbar.show {
+  visibility: visible;
+}
+
+.taskbar.hide {
+  visibility: hidden;
+}
+
+.first-part-taskbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+    background-color: var(--blackBackground);
+}
+
+.first-part-taskbar h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 40%;
+    height: 100%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-left: 1rem;
+}
+
+.header-image {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 56%;
+    height: 100%;
+}
+
+.contact-container h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: .9rem;
+    margin-right: 2rem;
+}
+
+#call-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 45%;
+    background-color: var(--redColor);
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+
+#call-number::after {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+.second-part-taskbar {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    background-color: #d62828;
+}
+
+.taskbar-buttons {
+    display: flex;
+    width: 34%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.taskbar-buttons a {
+    text-decoration: none;
+}
+
+.taskbar-buttons h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.background-container {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/chuttersnap-fN603qcEA7g-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateY(-50%); /* Adjust vertical translation */
+    will-change: none; /* Add for performance optimization */
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .content h1 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    margin-top: 21%;
+    width: 44%;
+  }
+
+  .content h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: white;
+    width: 44%;
+  }
+
+  .services-card {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 25%;
+    background-color: transparent;
+    margin: 0;
+    margin-top: 9%;
+  }
+
+  #services-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--redColor);
+    width: 100%;
+    height: 85%;
+  }
+
+  .services-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .services-icon-container {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+  }
+
+  .services-icon-container img {
+    max-width: 70%;
+    max-height: 70%;
+    filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(341deg) brightness(126%) contrast(114%);
+  }
+
+  .services-text-container {
+    display: flex;
+    width: 65%;
+    height: 50%;
+    flex-direction: row;
+  }
+
+  .transport-text-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .transport-text-container h1 {
+    color: white;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    width: 64%;
+}
+
+  .transport-text-container h2 {
+    font-size: 14px;
+    text-align: center;
+    width: 62%;
+    margin-left: -2.5rem;
+}
+
+  .export-text-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .export-text-container h1 {
+    color: white;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    width: 43%;
+    margin-left: 3rem;
+  }
+
+  .export-text-container h2 {
+    font-size: 14px;
+    text-align: center;
+    /* font-size: .85rem; */
+    width: 62%;
+    margin-left: 2.5rem;
+  }
+
+  .services-button-container {
+    display: none;
+    width: 100%;
+    height: 15%;
+  }
+
+  .services-button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    background-color: var(--blackBackground);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  .services-button:hover {
+    background-color: var(--darkRedColor);
+    color: white;
+  }
+
+  .second-background-container {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.second-background-image {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/denys-nevozhai-7nrsVjvALnA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateY(-50%); /* Adjust vertical translation */
+    will-change: none; /* Add for performance optimization */
+    }
+
+  .second-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 145%;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .second-content h1 {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+  }
+
+  .second-content h2 {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-decoration: none ;
+  }
+
+  #about-section {
+    display: flex;
+    flex-direction: row;
+    width: 101%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 2;
+    margin-top: 85%;
+  }
+
+  .about-image-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-image: url(./assets/images/nathan-cima-MHXJ9p64Jw8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .about-text h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+  }
+
+  .about-text h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    width: 60%;
+    line-height: 1.6em;
+    text-align: justify;
+  }
+
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 22%;
+    background-color: var(--redColor);
+    margin-top: 4rem;
+  }
+
+  .form-dimensions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+  }
+
+  .names-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+  }
+
+  .names-first-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+
+  .first-name-container {
+    display: flex;
+    width: 100%;
+    height: 20%;
+  }
+
+  .first-name-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    margin-left: 3.5rem;
+  }
+
+  .first-name-input {
+    display: flex;
+    width: 80%;
+    height: 25%;
+    background-color: transparent;
+    border: 1px solid var(--blackBackground);
+  }
+
+  .names-second-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border: none;
+  }
+
+  .email-name-container {
+    display: flex;
+    width: 100%;
+    height: 20%;
+  }
+
+  .email-name-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    margin-left: 3.55rem;
+  }
+
+  .email-name-input {
+    display: flex;
+    width: 80%;
+    height: 25%;
+    background-color: transparent;
+    border: 1px solid var(--blackBackground);
+  }
+
+  .message-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45%;
+    border-top: none;
+  }
+
+  .message-elements-container {
+    display: flex;
+    flex-direction: column;
+    width: 89.5%;
+    height: 80%;
+  }
+
+  .leave-message-container {
+    display: flex;
+    width: 100%;
+    height: 20%;  
+  }
+
+  .leave-message-text {
+    font-family: "Lato", sans-serif;
+  }
+
+  .message-input {
+    height: 70%;
+    background-color: transparent;
+    border: 1px solid var(--blackBackground);
+    outline: none;
+  }
+
+  .form-button-container {
+    display: flex;
+    width: 89%;
+    height: 15%;
+    background-color: var(--blackBackground);
+    border: 1px solid var(--blackBackground);
+    border-top: none;
+  }
+
+  .form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackBackground);
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    transition: color 0.4s ease;
+    color: white;
+  }
+
+  .form-button:hover {
+    color: var(--redColor);
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 14%;
+    background-color: var(--blackBackground);
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+  }
+
+  .logo-container img {
+    max-width: 100%;
+    max-height: 300%;
+  }
+
+  .contact-info {
+    display: flex;
+    width: 100%;
+    height: 35%;
+    flex-direction: column;
+  }
+
+  .contact-info h2 {
+    font-size: 1rem;
+  }
+
+  .call-us {
+    display: flex;
+    width: 40%;
+    height: 20%;
+    background-color: var(--redColor);
+  }
+
+  @media (min-width: 1920px) and (min-height: 1200px) {
+    body {
+      height: 340vh;
+    }
+    #call-number {
+      font-size: 1rem;
+    }
+    .contact-container h2 {
+      font-size: 1.2rem;
+    }
+    .taskbar-buttons h2 {
+      font-size: 1.3rem;
+    }
+    .transport-text-container h1 {
+      font-size: 1.5rem;
+    }
+    
+    .transport-text-container h2 {
+      font-size: 1.1rem;
+    }
+    .export-text-container h1 {
+      font-size: 1.5rem;
+    }
+    
+    .export-text-container h2 {
+      font-size: 1.1rem;
+      width: 62%;
+    }
+    .about-text h2 {
+      font-size: 22px;
+    }
+    .first-name-text,.email-name-text {
+      font-size: 1.2rem;
+      margin-left: 3.4rem;
+    }
+    .leave-message-text {
+      font-size: 1.2rem;
+    }
+    .form-button {
+      color: white;
+    }
+    .contact-info h2 {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 1920px) and (max-height: 1080px) {
+    .transport-text-container h1 {
+      font-size: 1.2rem;
+      width: 53%;
+    }
+    .transport-text-container h2 {
+      font-size: 14px;
+      width: 67%;
+    }
+    .export-text-container h1 {
+      width: 45%;
+    }
+    .export-text-container h2 {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 980px) {
+    body {
+      height: 355vh;
+    }
+    .first-part-taskbar h1 {
+      font-size: 1.1rem;
+    }
+    .content h1 {
+      font-size: 56px;
+    }
+    .taskbar-buttons {
+      width: 42%;
+    }
+    .contact-container h2 {
+      font-size: .8rem;
+    }
+    .content h2 {
+      font-size: 25px;
+    }
+    .transport-text-container h1 {
+      font-size: 15px;
+      width: 81%;
+    }
+    .transport-text-container h2 {
+      font-size: 11px;
+      width: 80%;
+      margin-right: 43px;
+    }
+    .export-text-container h1 {
+      font-size: 15px;
+      width: 81%;
+      margin-left: 5rem;
+    }
+    .export-text-container h2 {
+      font-size: 11px;
+      width: 80%;
+      margin-right: 43px;
+      padding-left: 73px;
+    }
+    .first-name-text,.email-name-text {
+      margin-left: 1.5rem;
+      font-size: .8rem;
+    }
+    .leave-message-text {
+      font-size: .8rem;
+    }
+    #call-number {
+      font-size: .6rem;
+    }
+    .contact-info {
+      height: 75%;
+    }
+    .contact-info h2 {
+      font-size: .7rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 979px) {
+    .first-part-taskbar h1 {
+      font-size: .9rem;
+    }
+    .taskbar-buttons h2 {
+      font-size: .9rem;
+    }
+    #call-number {
+      font-size: 0.7rem;
+      width: 25%;
+    }
+    .content h1 {
+      font-size: 47px;
+    }
+    .transport-text-container h1 {
+      font-size: 16px;
+      width: 105%;
+  }
+    .transport-text-container h2 {
+      font-size: 11px;
+      width: 93%;
+      margin-right: 43px;
+    }
+    .export-text-container h1 {
+      font-size: 16px;
+      width: 105%;
+  }
+    .export-text-container h2 {
+      font-size: 11px;
+      width: 93%;
+      margin-right: 43px;
+    }
+    .second-content h1 {
+      font-size: 1.6rem;
+    }
+    #about-section {
+      margin-top: 102%;
+    }
+  }
+  @media (max-width: 768px) {
+    .first-part-taskbar h1 {
+      font-size: .9rem;
+    }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      background-position: unset;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    .second-background-image {
+      background-position: inherit;
+      height: 110%;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    #call-number {
+      font-size: .65rem;
+      width: 25%;
+    }
+    .taskbar-buttons h2 {
+      font-size: .9rem;
+    }
+    .content h1 {
+      font-size: 45px;
+    }
+    #about-section {
+      margin-top: 108%;
+    }
+    .transport-text-container h1 {
+      font-size: 16px;
+      width: 108%;
+    }
+    .transport-text-container h2 {
+      font-size: 11px;
+      width: 97%;
+      margin-right: 43px;
+    }
+    .export-text-container h1 {
+      font-size: 16px;
+      width: 102%;
+    }
+    .export-text-container h2 {
+      font-size: 11px;
+       width: 97%;
+      margin-right: 38px;
+    }
+    .first-name-text, .email-name-text {
+      margin-left: 1.2rem;
+      font-size: .8rem;
+    }  
+  }
+  @media (max-width: 480px) {
+    .first-part-taskbar h1 {
+      font-size: .7rem;
+      width: 35%;
+    }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    .second-background-image {
+      background-position: inherit;
+      height: 110%;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    #call-number {
+      font-size: .6rem;
+      width: 38%;
+    }
+    #call-number {
+      font-size: .6rem;
+      width: 38%;
+    }
+    .content h1 {
+      font-size: 28px;
+      margin-top: 30%;
+    }
+    .content h2 {
+      font-size: 16px;
+    }
+    #about-section {
+      margin-top: 178%;
+    }
+    .transport-text-container h1 {
+      font-size: 13px;
+      width: 130%;
+    }
+    .transport-text-container h2 {
+      font-size: 11px;
+      width: 125%;
+      margin-right: 29px;
+    }
+    .export-text-container h1 {
+      font-size: 13px;
+      width: 130%;
+    }
+    .export-text-container h2 {
+      font-size: 11px;
+      width: 125%;
+      margin-right: 29px;
+    }
+    .services-header-container {
+      font-size: 1.3rem;
+    }
+    .first-name-text, .email-name-text {
+      margin-left: 0.7rem;
+      font-size: 0.7rem;
+    }
+    .leave-message-text {
+      font-size: .7rem;
+    }
+    .form-button {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 450px) and (max-height: 740px) {
+    body {
+      height: 335vh;
+    }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      background-position: unset;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    .second-background-image {
+      background-position: inherit;
+      height: 110%;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    .first-part-taskbar h1 {
+      display: none;
+    }
+    .header-image {
+      display: block;
+    }
+    #call-number {
+      font-size: .73rem;
+      width: 55%;
+    }
+    .taskbar-buttons {
+      width: 98%;
+    }
+    .taskbar-buttons h2 {
+      font-size: 1rem;
+    }
+    .content h1 {
+      font-size: 41px;
+      margin-top: 50%;
+    }
+    .content h2 {
+      font-size: 17px;
+    }
+    #about-section {
+      margin-top: 218%;
+    }
+    .transport-text-container h1 {
+      font-size: 14px;
+      width: 178%;
+    }
+    .transport-text-container h2 {
+      font-size: 9.1px;
+      width: 125%;
+      margin-right: 0px;
+    }
+    .export-text-container h1 {
+      font-size: 14px;
+      width: 168%;
+    }
+    .export-text-container h2 {
+      font-size: 8.8px;
+      width: 125%;
+      margin-left: -6px;
+    }
+    .transport-text-container {
+      margin-top: -.5rem;
+    }
+    .transport-text-container h1 {
+      font-size: 14px;
+      width: 125%;
+      margin-top: 1rem;
+    }
+    .transport-text-container h2 {
+      font-size: 10.5px;
+      width: 124%;
+      margin-right: 0px;
+    }
+    .export-text-container {
+      margin-top: -.5rem;
+    }
+    .export-text-container h1 {
+      font-size: 14px;
+      width: 123%;
+      margin-top: 1rem;
+    }
+    .export-text-container h2 {
+      font-size: 10.5px;
+      width: 144%;
+      margin-left: -6px;
+    }
+    .logo-container {
+      width: 36%;
+      height: 20%;
+    }
+    .logo-container img {
+      max-width: 100%;
+      max-height: 300%;
+    }
+    .second-content h2 {
+      width: 90%;
+    }
+    .contact-info {
+      height: 75%;
+      align-items: center;
+    }
+    .services-card {
+      display: flex;
+      flex-direction: column;
+      width: 83%;
+      height: 25%;
+      background-color: transparent;
+      margin: 0;
+      margin-top: 9%;
+    }
+    .about-text h2 {
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      width: 60%;
+      line-height: 1.6em;
+      text-align: center;
+    }
+
+  }
+
+  @media (max-width: 450px) and (max-height: 950px) {
+    body {
+      height: 301vh;
+    }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      background-position: unset;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    .second-background-image {
+      background-position: inherit;
+      height: 110%;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    .first-part-taskbar h1 {
+      display: none;
+    }
+    .header-image {
+      display: block;
+    }
+    #call-number {
+      font-size: .73rem;
+      width: 55%;
+    }
+    .taskbar-buttons {
+      width: 98%;
+    }
+    .taskbar-buttons h2 {
+      font-size: 1rem;
+    }
+    .content h1 {
+      font-size: 41px;
+      margin-top: 50%;
+    }
+    .content h2 {
+      font-size: 17px;
+    }
+    #about-section {
+      margin-top: 218%;
+    }
+    .transport-text-container h1 {
+      font-size: 14px;
+      width: 178%;
+    }
+    .transport-text-container h2 {
+      font-size: 10.5px;
+      width: 110%;
+      margin-right: 0px;
+    }
+    .export-text-container h1 {
+      font-size: 14px;
+      width: 168%;
+    }
+    .export-text-container h2 {
+      font-size: 10.5px;
+      width: 134%;
+      margin-left: -6px;
+    }
+    .transport-text-container {
+      margin-top: -.5rem;
+    }
+    .transport-text-container h1 {
+      font-size: 14px;
+      width: 125%;
+      margin-top: 1rem;
+    }
+    .transport-text-container h2 {
+      font-size: 10.5px;
+      width: 124%;
+      margin-right: 0px;
+    }
+    .export-text-container {
+      margin-top: -.5rem;
+    }
+    .export-text-container h1 {
+      font-size: 14px;
+      width: 123%;
+      margin-top: 1rem;
+    }
+    .export-text-container h2 {
+      font-size: 10.5px;
+      width: 144%;
+      margin-left: -6px;
+    }
+    .logo-container {
+      width: 36%;
+      height: 20%;
+    }
+    .logo-container img {
+      max-width: 100%;
+      max-height: 300%;
+    }
+    .second-content h2 {
+      width: 90%;
+    }
+    .contact-info {
+      height: 75%;
+      align-items: center;
+    }
+    .services-card {
+      display: flex;
+      flex-direction: column;
+      width: 83%;
+      height: 25%;
+      background-color: transparent;
+      margin: 0;
+      margin-top: 9%;
+    }
+    .about-text h2 {
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      width: 60%;
+      line-height: 1.6em;
+      text-align: center;
+    }
+
+  }
+
+  @media (max-width: 450px) and (max-height: 670px) {
+    body {
+      height: 335vh;
+      text-decoration: none;
+    }
+    .background-image {
+      height: 134%;
+      background-size: cover;
+      background-position: unset;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    .second-background-image {
+      background-position: inherit;
+      height: 110%;
+      transform: translate3d(0, calc(50% + 200px), 0);
+    }
+    .first-part-taskbar h1 {
+      display: none;
+    }
+    .header-image {
+      display: block;
+    }
+    #call-number {
+      font-size: 0.63rem;
+      width: 53%;
+    }
+    .taskbar-buttons {
+      width: 98%;
+    }
+    .taskbar-buttons h2 {
+      font-size: 1rem;
+    }
+    .content h1 {
+      font-size: 40px;
+      margin-top: 50%;
+      width: 77%;
+    }
+    .content h2 {
+      font-size: 17px;
+      width: 75%;
+    }
+    .services-card {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      height: 25%;
+      background-color: transparent;
+      margin: 0;
+      margin-top: 9%;
+    }
+    #about-section {
+      margin-top: 218%;
+    }
+    .about-text h2 {
+      font-family: "Lato", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      width: 60%;
+      line-height: 1.6em;
+      text-align: center;
+    }
+    .services-card {
+      height: 35%;
+    }
+    .transport-text-container h1 {
+      font-size: 13px;
+      width: 141%;
+      margin-top: 1.5rem;
+    }
+    .transport-text-container h2 {
+      text-align: center;
+      font-size: 10px;
+      width: 104%;
+      margin-right: 0px;
+    }
+    .export-text-container h1 {
+      font-size: 13px;
+      width: 140%;
+      margin-top: 1.5rem;
+      margin-left: 6rem;
+    }
+    .export-text-container h2 {
+      font-size: 9.7px;
+      width: 111%;
+      text-align: center;
+      margin-left: -6px;
+    }
+    .transport-text-container {
+      margin-top: -.5rem;
+    }
+    .export-text-container {
+      margin-top: -.5rem;
+    }
+    .logo-container {
+      width: 36%;
+      height: 20%;
+    }
+    .logo-container img {
+      max-width: 100%;
+      max-height: 300%;
+    }
+    .second-content h2 {
+      width: 90%;
+    }
+    .contact-info {
+      height: 75%;
+      align-items: center;
+    }
+
+  }
+
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
