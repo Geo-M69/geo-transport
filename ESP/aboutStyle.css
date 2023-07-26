@@ -1055,16 +1055,17 @@ body {
     }
     .transport-text-container h1 {
       font-size: 14px;
-      width: 178%;
+      width: 156%;
+      margin-top: 1rem;
     }
     .transport-text-container h2 {
       font-size: 10.5px;
-      width: 87%;
+      width: 93%;
       margin-right: 0px;
     }
     .export-text-container h1 {
       font-size: 14px;
-      width: 116%;
+      width: 141%;
       margin-top: 1rem;
     }
     .export-text-container h2 {
@@ -1204,7 +1205,7 @@ body {
     }
     .export-text-container h2 {
       font-size: 9px;
-      width: 145%;
+      width: 142%;
       text-align: center;
       margin-left: -6px;
     }
